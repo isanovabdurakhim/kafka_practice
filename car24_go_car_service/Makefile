@@ -63,7 +63,7 @@ push-image:
 	docker push ${REGISTRY}/${PROJECT_NAME}/${IMG_NAME}:${ENV_TAG}
 
 migrate-local-up:
-	migrate -database 'postgres://postgres:wie4cungaiNg3moh@178.128.206.122:30432/car_service?sslmode=disable' -path migrations up
+	migrate -database 'postgres://isanov:i1saanoff@178.128.206.122:30432/brand_service?sslmode=disable' -path migrations up
 
 migrate-local-down:
 	migrate -database ${POSTGRESQL_URL} -path migrations down
